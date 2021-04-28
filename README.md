@@ -1,1 +1,2 @@
-# goit-markup-hw-03
+# goit-markup-hw-02
+basics of html&amp;css
