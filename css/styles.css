@@ -5,6 +5,7 @@
 /* #E5E5E5 main background color */
 /* #FFFFFF header background color */
 /* #2F303A footer background color */
+/* container weight 1170px + 2*15px*/
 :root {
   --primary-title-color: #212121;
   --secondary-title-color: #ffffff;
@@ -19,7 +20,33 @@ body {
   color: var(--primary-title-color);
   background-color: #ffffff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.page-header {
+  background-color: #ffffff;
+}
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -30,9 +57,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 .contant-page {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 }
 /* Header */
 .logo-1 {
@@ -49,6 +77,8 @@ body {
   color: var(--secondary-title-color);
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link-external {
@@ -65,18 +95,24 @@ body {
 }
 /* Hero */
 .hero {
+  text-align: center;
   background-color: #2f303a;
 }
 .hero-title {
+  margin: 0 auto 30px;
+  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
 }
 .button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  margin-bottom: 200px;
   font-family: inherit;
   background-color: var(--accent-color);
   font-weight: 700;
@@ -87,8 +123,6 @@ body {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 200px;
-  height: 50px;
   cursor: pointer;
   color: var(--secondary-title-color);
 }
@@ -97,6 +131,9 @@ body {
   background-color: #188ce8;
 }
 /* Features of work */
+.feature {
+  margin: 94px auto;
+}
 .feature-title {
   font-weight: 700;
   line-height: 1.14;
@@ -106,8 +143,13 @@ body {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
+/* Our services */
+.services {
+  margin: 94px auto 104px;
+}
 /* Team */
 .team-section {
+  padding: 94px 0;
   background-color: #f5f4fa;
 }
 .full-name {
@@ -122,12 +164,20 @@ body {
 }
 /* Footer */
 .contacs {
+  padding: 60px 0;
   background-color: #2f303a;
+}
+.contacs-item {
+  margin-top: 20px;
 }
 .address {
   text-decoration: none;
   font-style: normal;
   color: var(--secondary-title-color);
+}
+/* Contant page */
+.contant-page {
+  margin: 94px 0;
 }
 /* Our projects */
 .button-filter {
