@@ -37,21 +37,58 @@ ol {
 ul {
   list-style: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 .page-header {
   background-color: #ffffff;
 }
 .container {
   margin: 0 auto;
   width: 1200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
+}
+.main-nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.auth-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.auth-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 .section-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
 .link {
+  display: flex;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -76,12 +113,9 @@ ul {
 .logo-3 {
   color: var(--secondary-title-color);
 }
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 .link-external {
+  flex-basis: auto;
+  justify-content: center;
   color: inherit;
 }
 .link-external:hover,
@@ -99,6 +133,7 @@ ul {
   background-color: #2f303a;
 }
 .hero-title {
+  width: 696px;
   margin: 0 auto 30px;
   padding-top: 200px;
   font-weight: 900;
@@ -134,7 +169,18 @@ ul {
 .feature {
   margin: 94px auto;
 }
+.feature-list {
+  margin-right: -30px;
+  display: flex;
+}
+.feature-list .item {
+  flex-basis: calc((100% - 120px) / 4);
+}
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 .feature-title {
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -147,17 +193,36 @@ ul {
 .services {
   margin: 94px auto 104px;
 }
+.list-services-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
 /* Team */
 .team-section {
   padding: 94px 0;
   background-color: #f5f4fa;
 }
+.list-team,
+.list-services {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.list-team-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .full-name {
+  margin: 30px auto 10px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 .position {
+  text-align: center;
   font-size: 16px;
   line-height: 1.19;
   color: var(--primary-text-color);
@@ -177,10 +242,21 @@ ul {
 }
 /* Contant page */
 .contant-page {
-  margin: 94px 0;
+  padding: 94px 0;
 }
 /* Our projects */
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-left: -8px;
+  margin-top: -8px;
+  margin-bottom: 50px;
+  flex-basis: calc((100% - 40px) / 5);
+}
 .button-filter {
+  margin-left: 8px;
+  margin-top: 8px;
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -199,13 +275,31 @@ ul {
   background-color: var(--accent-color);
   color: var(--secondary-title-color);
 }
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.card-list-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 404px;
+}
 .card {
   text-decoration: none;
 }
 .project-img {
+  margin-bottom: 20px;
   background-color: #eeeeee;
 }
+.card-content {
+  width: 322px;
+  margin: 20px 24px;
+}
 .project-name {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
